@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(to right, #000, #555);
+  color: white;
+}
+
+.podcast {
+  background: #fff;
+  color: #222;
+}
+
+.about {
+  background: #eaeaea;
+}
+
+.contact {
+  background: #111;
+  color: white;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #000;
+  color: white;
+  font-size: 0.9rem;
+}
