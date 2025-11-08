@@ -1,104 +1,94 @@
 import React from "react";
 import "./App.css";
-import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 function App() {
   return (
-    <div>
-      {/* ---------- Navigation ---------- */}
-      <nav>
-        <div className="logo">ZackTalks</div>
-        <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#podcasts">Podcasts</a>
-          <a href="#about">About</a>
-          <a href="#sobriety">Sobriety</a>
-          <a href="#voice">The People’s Movement</a>
-          <a href="#contact">Contact</a>
-        </div>
+    <div className="app-container">
+      {/* NAVBAR */}
+      <nav className="navbar">
+        <div className="logo">ZACKTALKS</div>
+        <ul className="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#science">Science</a></li>
+          <li><a href="#politics">Politics</a></li>
+          <li><a href="#sports">Sports</a></li>
+          <li><a href="#sobriety">Sobriety</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
 
-      {/* ---------- Home Section ---------- */}
-      <section id="home" className="section">
-        <h2>Welcome to ZackTalks</h2>
+      {/* HOME */}
+      <section id="home" className="section home">
+        <h1>Healing through Hope. Change through Conversation.</h1>
         <p>
-          A space where conversations meet courage. We speak about hope,
-          healing, and the silent revolutions happening in the hearts of
-          everyday people. Here, science meets soul — and stories become
-          movements.
+          ZackTalks is where stories, science, and service meet — to remind the world that
+          healing is real, hope is alive, and every voice matters.
         </p>
       </section>
 
-      {/* ---------- Podcast Section ---------- */}
-      <section id="podcasts" className="section">
-        <h2>Podcasts</h2>
+      {/* STORIES */}
+      <section id="stories" className="section">
+        <h2>Moments That Changed Everything</h2>
         <p>
-          Listen to raw, honest conversations about life, purpose, and the power
-          of change. From Malindi to the world, we amplify voices that matter.
-          Every episode is a reminder that your story still has a say.
+          History has been shaped by broken people who refused to give up. From Mandela’s
+          patience to the resilience of everyday heroes, this space celebrates transformation.
         </p>
       </section>
 
-      {/* ---------- About Section ---------- */}
-      <section id="about" className="section">
-        <h2>About ZackTalks</h2>
+      {/* SCIENCE */}
+      <section id="science" className="section alt">
+        <h2>The Science of Healing</h2>
         <p>
-          Zack Mbugua — the storyteller, biochemist, and believer in reason,
-          hope, and humanity. Through ZackTalks, I blend science, politics, and
-          storytelling to remind us that transformation begins in the human
-          mind and expands to society.
+          With a background in Biochemistry and Molecular Biology, Zack dives into the
+          chemistry of emotions — exploring how hope rewires the mind and body.
         </p>
       </section>
 
-      {/* ---------- Sobriety Section ---------- */}
+      {/* POLITICS */}
+      <section id="politics" className="section">
+        <h2>Politics of Possibility</h2>
+        <p>
+          Real politics isn’t about noise — it’s about reason, humanity, and hope.
+          Through ZackTalks, we explore leadership that heals instead of dividing.
+        </p>
+      </section>
+
+      {/* SPORTS */}
+      <section id="sports" className="section alt">
+        <h2>The Field of Healing</h2>
+        <p>
+          Football and art have long been therapy for the soul. From teamwork to discipline,
+          every goal scored is a lesson in mental endurance.
+        </p>
+      </section>
+
+      {/* SOBRIETY */}
       <section id="sobriety" className="section">
-        <h2>Sobriety & Healing</h2>
+        <h2>Sobriety & New Beginnings</h2>
         <p>
-          I know what it means to fall and rise again. Sobriety isn’t just
-          freedom from addiction — it’s freedom from shame. It’s waking up to
-          your own power, choosing peace, and learning that healing is not a
-          destination — it’s a way of walking.
+          A story of falling, rising, and rediscovering purpose. ZackTalks stands as proof
+          that healing is not theory — it’s lived reality.
         </p>
       </section>
 
-      {/* ---------- The People's Movement ---------- */}
-      <section id="voice" className="section">
-        <h2>The People’s Movement</h2>
+      {/* CONTACT */}
+      <section id="contact" className="section alt contact">
+        <h2>Connect With Zack</h2>
         <p>
-          Real change doesn’t come from politics alone — it comes from people.
-          It starts in small acts of kindness, in refusing to lose faith, and in
-          daring to ask, *what if hope led the agenda?*  
-          <br /><br />
-          ZackTalks is not a campaign; it’s a conversation. A reminder that
-          leadership begins when we choose compassion over power, truth over
-          applause, and purpose over profit.
+          Let’s keep the conversation alive. Reach out or follow ZackTalks on:
         </p>
-      </section>
-
-      {/* ---------- Contact & Socials ---------- */}
-      <footer id="contact">
-        <h2>Contact</h2>
-        <p>Reach out anytime — let’s keep the conversation alive.</p>
-        <p><strong>WhatsApp:</strong> +254 721 420184</p>
-        <p><strong>Email:</strong> smartzachary97@gmail.com</p>
         <div className="socials">
-          <a href="https://wa.me/254721420184" target="_blank" rel="noreferrer">
-            <FaWhatsapp />
-          </a>
-          <a href="https://facebook.com/zacktalks" target="_blank" rel="noreferrer">
-            <FaFacebook />
-          </a>
-          <a href="https://instagram.com/zacktalks" target="_blank" rel="noreferrer">
-            <FaInstagram />
-          </a>
-          <a href="https://x.com/zacktalks" target="_blank" rel="noreferrer">
-            <FaTwitter />
-          </a>
-          <a href="https://tiktok.com/@zacktalks" target="_blank" rel="noreferrer">
-            <FaTiktok />
-          </a>
+          <a href="https://wa.me/254721420184" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://x.com" target="_blank" rel="noreferrer">X (Twitter)</a>
+          <a href="https://tiktok.com" target="_blank" rel="noreferrer">TikTok</a>
         </div>
-        <p>© {new Date().getFullYear()} ZackTalks. All rights reserved.</p>
+      </section>
+
+      <footer>
+        <p>© 2025 ZackTalks — Healing Through Hope.</p>
       </footer>
     </div>
   );

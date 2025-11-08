@@ -1,179 +1,102 @@
-/* ---------- Global Reset ---------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-  color: #1a1a1a;
-  line-height: 1.8;
-  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f8f8;
+  color: #222;
 }
 
-/* ---------- Smooth Fade-In Animation ---------- */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.app-container {
+  text-align: center;
 }
 
-/* Apply fade-in to each section */
-.section {
-  opacity: 0;
-  animation: fadeInUp 1.2s ease forwards;
-}
-
-.section:nth-child(1) { animation-delay: 0.3s; }
-.section:nth-child(2) { animation-delay: 0.6s; }
-.section:nth-child(3) { animation-delay: 0.9s; }
-.section:nth-child(4) { animation-delay: 1.2s; }
-
-/* ---------- Navigation ---------- */
-nav {
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  padding: 25px;
   background-color: #fff;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-nav a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 500;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: #d4af37; /* Gold underline */
-  transition: 0.3s ease;
-}
-
-nav a:hover {
-  color: #d4af37;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-/* ---------- Section Styling ---------- */
-.section {
-  max-width: 800px;
-  margin: 100px auto;
-  text-align: center;
-  padding: 0 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.section h2 {
+.logo {
   font-family: 'Playfair Display', serif;
-  font-size: 2.3rem;
-  margin-bottom: 15px;
-  color: #1a1a1a;
-  letter-spacing: 0.5px;
-}
-
-.section p {
-  color: #444;
-  font-size: 1.05rem;
-}
-
-.section:hover {
-  transform: scale(1.01);
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
-}
-
-/* ---------- The People’s Voice ---------- */
-#voice {
-  background: linear-gradient(135deg, #fafafa, #f5f5f5);
-  padding: 60px 20px;
-  border-radius: 12px;
-  border-left: 6px solid #d4af37;
-}
-
-#voice h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-style: italic;
   color: #000;
 }
 
-#voice p {
-  color: #222;
-  font-weight: 400;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  margin: 0;
+  padding: 0;
 }
 
-/* ---------- Footer ---------- */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d4af37; /* Gold hover */
+}
+
+.section {
+  padding: 5rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section.alt {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.section h1, .section h2 {
+  font-family: 'Playfair Display', serif;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.socials a {
+  background-color: #d4af37;
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.socials a:hover {
+  background-color: #b7950b;
+}
+
 footer {
   background-color: #000;
   color: #fff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-footer h2 {
-  color: #d4af37;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 10px;
-}
-
-footer p {
-  color: #ccc;
-  font-size: 0.95rem;
-  margin-bottom: 20px;
-}
-
-footer a {
-  color: #d4af37;
-  margin: 0 12px;
-  font-size: 1.4rem;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-footer a:hover {
-  color: #fff;
-  transform: scale(1.25);
-}
-
-footer strong {
-  color: #fff;
-}
-
-/* ---------- Responsive Design ---------- */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .section {
-    margin: 60px auto;
-  }
-
-  nav a {
-    font-size: 0.95rem;
-  }
-
-  footer {
-    padding: 40px 15px;
-  }
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
