@@ -6,14 +6,15 @@ function App() {
     <div className="app-container">
       {/* NAVBAR */}
       <nav className="navbar">
-        <div className="logo">ZACKTALKS</div>
+        <div className="logo">ZackTalks</div>
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#stories">Stories</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#articles">Articles</a></li>
           <li><a href="#science">Science</a></li>
           <li><a href="#politics">Politics</a></li>
-          <li><a href="#sports">Sports</a></li>
-          <li><a href="#sobriety">Sobriety</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#podcast">Podcast</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -22,53 +23,93 @@ function App() {
       <section id="home" className="section home">
         <h1>Healing through Hope. Change through Conversation.</h1>
         <p>
-          ZackTalks is where stories, science, and service meet — to remind the world that
+          ZackTalks blends stories, science, and service — reminding the world that
           healing is real, hope is alive, and every voice matters.
         </p>
       </section>
 
-      {/* STORIES */}
-      <section id="stories" className="section">
-        <h2>Moments That Changed Everything</h2>
+      {/* ABOUT */}
+      <section id="about" className="section alt">
+        <h2>About Zack</h2>
         <p>
-          History has been shaped by broken people who refused to give up. From Mandela’s
-          patience to the resilience of everyday heroes, this space celebrates transformation.
+          Zack Mbugua, storyteller and youth advocate, uses his background in
+          Biochemistry to explore the science behind emotions, healing, and
+          resilience. From personal trauma to national consciousness, ZackTalks
+          is a journey of transformation.
+        </p>
+      </section>
+
+      {/* ARTICLES */}
+      <section id="articles" className="section">
+        <h2>Latest Articles — Week 1</h2>
+
+        <h3>“The Year My Mind Broke — and the Day My Life Started Again”</h3>
+        <p>
+          There is a moment in every life where something snaps. In mine, it was silent…
+          a collapse that felt like being awake inside a storm. My mind broke in my
+          second year of university. I didn’t understand anxiety, trauma, or why I felt
+          so deeply. On the outside, I looked fine. Inside, I was drowning in thoughts
+          I couldn’t explain.
+        </p>
+        <p>
+          I carried childhood wounds, household storms, and a breakup that shattered me
+          deeper than I expected. I started failing units, skipping classes, drinking,
+          running from myself. Seven years lost. But a small flame whispered: "Not yet."
+          I returned to university, faced my fears, and quietly graduated. Healing didn’t
+          make me new — it made me real.
         </p>
       </section>
 
       {/* SCIENCE */}
       <section id="science" className="section alt">
-        <h2>The Science of Healing</h2>
+        <h2>Science of Healing — Week 1</h2>
+        <h3>“How Trauma Rewires the Brain — and How You Rewire It Back”</h3>
         <p>
-          With a background in Biochemistry and Molecular Biology, Zack dives into the
-          chemistry of emotions — exploring how hope rewires the mind and body.
+          Trauma changes the brain physically. The amygdala becomes hyperactive,
+          making people overthink and react strongly to triggers. The prefrontal
+          cortex, which controls logic and decision-making, slows down. But the same
+          brain can be rewired by healing — neuroplasticity allows the mind to recover
+          and grow.
+        </p>
+        <p>
+          Try this 2-minute exercise: Inhale 4s, exhale 6s, name your emotions without
+          judgment — “I feel scared, overwhelmed, angry, lonely.” Naming emotions
+          calms the amygdala and activates the prefrontal cortex. Trauma rewired you
+          for survival; healing rewires you for living.
         </p>
       </section>
 
       {/* POLITICS */}
       <section id="politics" className="section">
-        <h2>Politics of Possibility</h2>
+        <h2>Politics of Possibility — Week 1</h2>
+        <h3>“Mental Health Is Political: Why Kenyan Youth Are Breaking Inside”</h3>
         <p>
-          Real politics isn’t about noise — it’s about reason, humanity, and hope.
-          Through ZackTalks, we explore leadership that heals instead of dividing.
+          Kenyan youth are not lazy — they are exhausted. Mental health is political.
+          Unemployment, corruption, and hopeless systems create trauma. A country that
+          ignores mental health is manufacturing hopelessness. Leadership must be
+          empathetic, and policy must nurture hope. Hope is political.
         </p>
       </section>
 
-      {/* SPORTS */}
-      <section id="sports" className="section alt">
-        <h2>The Field of Healing</h2>
+      {/* PROJECTS */}
+      <section id="projects" className="section alt">
+        <h2>Community Projects</h2>
         <p>
-          Football and art have long been therapy for the soul. From teamwork to discipline,
-          every goal scored is a lesson in mental endurance.
+          From youth programs to social change initiatives, ZackTalks turns ideas
+          into action — proving that healing extends beyond the individual.
         </p>
       </section>
 
-      {/* SOBRIETY */}
-      <section id="sobriety" className="section">
-        <h2>Sobriety & New Beginnings</h2>
+      {/* PODCAST */}
+      <section id="podcast" className="section">
+        <h2>The ZackTalks Podcast — Week 1</h2>
+        <h3>“The Inner War: What Young Men Carry in Silence”</h3>
         <p>
-          A story of falling, rising, and rediscovering purpose. ZackTalks stands as proof
-          that healing is not theory — it’s lived reality.
+          Boys are told: “Be strong, don’t cry.” Suppressed emotion becomes tension,
+          rage, and self-destruction. On the ZackTalks podcast, Zack explains the science
+          behind emotional suppression, shares personal struggles, and offers hope:
+          "Strength is not the absence of struggle — it is the ability to rebuild after
+          breaking."
         </p>
       </section>
 
